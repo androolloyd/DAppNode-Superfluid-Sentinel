@@ -1,0 +1,17 @@
+version: "3.4"
+services:
+  sentinel:
+    environment:
+      - PRIVATE_KEY=
+      - MNEMONIC=
+      - TOKENS=
+      - >-
+        HTTP_RPC_NODE=https://polygon-mainnet.g.alchemy.com/v2/YKMiuSSeKnnAY11NA2Nw3tl2KXBCtlJp
+      - >-
+        WS_RPC_NODE=wss://polygon-mainnet.g.alchemy.com/v2/YKMiuSSeKnnAY11NA2Nw3tl2KXBCtlJp
+    build:
+      context: sentinel
+      args:
+        UPSTREAM_VERSION: master
+    image: "sentinel.superfluid-sentinel.public.dappnode.eth:0.1.0"
+    restart: unless-stopped

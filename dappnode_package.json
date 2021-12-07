@@ -1,0 +1,28 @@
+{
+  "name": "superfluid-sentinel.public.dappnode.eth",
+  "version": "0.1.0",
+  "shortDescription": "A bot to keep the superfluid system healthy",
+  "description": "A bot to keep the superfluid system healthy",
+  "upstreamVersion": "master",
+  "upstreamRepo": "superfluid-finance/superfluid-sentinel",
+  "upstreamArg": "UPSTREAM_VERSION",
+  "type": "service",
+  "categories": ["Developer tools"],
+  "architectures": ["linux/amd64"],
+  "author": "Andrew Redden <opensource@andrewredden.com> (https://github.com/androolloyd)",
+  "contributors": [
+    "Superfluid (https://github.com/superfluid-finance)"
+  ],
+  "links": {
+    "homepage": "https://github.com/superfluid-finance/superfluid-sentinel"
+  },
+  "mainService": "sentinel",
+  "license": "GLP-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/androolloyd/DAppNodePackage-superfluid-sentinel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/androolloyd/DAppNodePackage-superfluid-sentinel/issues"
+  }
+}
