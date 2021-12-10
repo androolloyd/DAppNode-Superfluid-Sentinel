@@ -11,7 +11,7 @@ services:
       - HTTP_RPC_NODE=
       - WS_RPC_NODE=
     ports:
-      - 3000
+      - "3000"
     build:
       context: sentinel
       args:
