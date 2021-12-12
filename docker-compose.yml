@@ -4,6 +4,7 @@ services:
     volumes:
       - "sentinel_data:/sentinel_data"
     environment:
+      - DB_PATH=/sentinel_data/db.sqlite
       - CLO_ADDR=
       - PRIVATE_KEY=
       - MNEMONIC=
@@ -11,7 +12,7 @@ services:
       - HTTP_RPC_NODE=
       - WS_RPC_NODE=
     ports:
-      - 3000
+      - "3000"
     build:
       context: sentinel
       args:
